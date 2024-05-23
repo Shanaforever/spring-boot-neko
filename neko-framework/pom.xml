@@ -8,13 +8,12 @@
         <artifactId>spring-boot-neko</artifactId>
         <version>${revision}</version>
     </parent>
-
     <packaging>pom</packaging>
-
-    <artifactId>neko-framework</artifactId>
-
     <modules>
         <module>neko-spring-boot-starter-web</module>
     </modules>
+
+    <artifactId>neko-framework</artifactId>
+    <description>组件库</description>
 
 </project>

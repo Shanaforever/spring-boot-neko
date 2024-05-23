@@ -5,17 +5,34 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>com.neko.boot</groupId>
-        <artifactId>spring-boot-neko</artifactId>
-        <version>0.0.1-jdk11-snapshot</version>
-        <relativePath>../../pom.xml</relativePath>
+        <artifactId>neko-framework</artifactId>
+        <version>${revision}</version>
     </parent>
 
     <artifactId>neko-spring-boot-starter-web</artifactId>
+    <packaging>jar</packaging>
 
-    <properties>
-        <maven.compiler.source>11</maven.compiler.source>
-        <maven.compiler.target>11</maven.compiler.target>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    </properties>
+    <name>${project.artifactId}</name>
+    <description>springboot web框架 封装</description>
+
+    <dependencies>
+        <!-- Web 相关 -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+        <!-- spring boot 配置所需依赖 -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-configuration-processor</artifactId>
+            <optional>true</optional>
+        </dependency>
+        <!-- Test 测试相关 -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
 
 </project>

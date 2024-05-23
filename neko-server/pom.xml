@@ -6,46 +6,27 @@
     <parent>
         <groupId>com.neko.boot</groupId>
         <artifactId>spring-boot-neko</artifactId>
-        <version>${revision}</version>
+        <version>0.0.1-jdk11-snapshot</version>
     </parent>
 
     <artifactId>neko-server</artifactId>
     <packaging>jar</packaging>
 
     <name>${project.artifactId}</name>
-    <description>
-        后端 Server 的主项目 负责启动整个工程
-    </description>
+    <description>项目入口</description>
 
     <dependencies>
+        <dependency>
+            <groupId>com.neko.boot</groupId>
+            <artifactId>neko-spring-boot-starter-web</artifactId>
+            <version>${revision}</version>
+        </dependency>
+        <!-- spring boot 配置所需依赖 -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-configuration-processor</artifactId>
             <optional>true</optional>
         </dependency>
-        <dependency>
-            <groupId>com.neko.boot</groupId>
-            <artifactId>neko-framework</artifactId>
-            <version>${revision}</version>
-        </dependency>
     </dependencies>
-    <build>
-        <!-- 设置构建的 jar 包名 -->
-        <finalName>${project.artifactId}</finalName>
-        <plugins>
-            <!-- 打包 -->
-            <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-                <version>${spring.boot.version}</version>
-                <executions>
-                    <execution>
-                        <goals>
-                            <goal>repackage</goal> <!-- 将引入的 jar 打入其中 -->
-                        </goals>
-                    </execution>
-                </executions>
-            </plugin>
-        </plugins>
-    </build>
+
 </project>

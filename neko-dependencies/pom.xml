@@ -10,15 +10,15 @@
     <packaging>pom</packaging>
 
     <name>${project.artifactId}</name>
+
     <description>
         basic bom file, this file will manage all project dependencies version
     </description>
 
     <properties>
-        <revision>2.1.0-jdk8-snapshot</revision>
+        <revision>0.0.1-jdk11-snapshot</revision>
         <!-- 统一依赖管理 -->
         <spring.boot.version>2.7.18</spring.boot.version>
-
     </properties>
 
     <dependencyManagement>
@@ -38,12 +38,7 @@
                 <artifactId>spring-boot-configuration-processor</artifactId>
                 <version>${spring.boot.version}</version>
             </dependency>
-            <!-- Web 相关 -->
-            <dependency>
-                <groupId>com.neko.boot</groupId>
-                <artifactId>neko-spring-boot-starter-web</artifactId>
-                <version>${revision}</version>
-            </dependency>
+
         </dependencies>
     </dependencyManagement>
 

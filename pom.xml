@@ -2,25 +2,20 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <!-- <parent> -->
-    <!--     <groupId>org.springframework.boot</groupId> -->
-    <!--     <artifactId>spring-boot-starter-parent</artifactId> -->
-    <!--     <version>2.7.1</version> -->
-    <!--     <relativePath/> &lt;!&ndash; lookup parent from repository &ndash;&gt; -->
-    <!-- </parent> -->
 
     <groupId>com.neko.boot</groupId>
     <artifactId>spring-boot-neko</artifactId>
     <version>${revision}</version>
     <packaging>pom</packaging>
 
-    <name>spring-boot-neko</name>
-    <description>自建springboot脚手架</description>
     <modules>
         <module>neko-dependencies</module>
         <module>neko-framework</module>
         <module>neko-server</module>
     </modules>
+
+    <name>spring-boot-neko</name>
+    <description>自建springboot脚手架</description>
 
     <properties>
         <revision>0.0.1-jdk11-snapshot</revision>
@@ -124,5 +119,17 @@
         </plugins>
     </build>
 
-
+    <!-- 使用 huawei / aliyun 的 Maven 源，提升下载速度 -->
+    <repositories>
+        <repository>
+            <id>huaweicloud</id>
+            <name>huawei</name>
+            <url>https://mirrors.huaweicloud.com/repository/maven/</url>
+        </repository>
+        <repository>
+            <id>aliyunmaven</id>
+            <name>aliyun</name>
+            <url>https://maven.aliyun.com/repository/public</url>
+        </repository>
+    </repositories>
 </project>
