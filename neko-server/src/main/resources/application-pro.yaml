@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: neko-server
+
+  profiles:
+    active: local
+
+  main:
+    allow-circular-references: true # 允许循环依赖，因为项目是三层架构，无法避免这个情况。
+
+
+neko:
+  info:
+    version: 1.0.0
+    base-package: com.neko.boot
+
+server:
+  port: 8090
+  servlet:
+    context-path: /neko-server
