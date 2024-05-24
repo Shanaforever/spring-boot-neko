@@ -1,6 +1,8 @@
 spring:
   application:
     name: neko-server
+  thymeleaf:
+    check-template-location: false
 
   profiles:
     active: @profile.active@
