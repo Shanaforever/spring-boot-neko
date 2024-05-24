@@ -6,7 +6,7 @@
     <parent>
         <groupId>com.neko.boot</groupId>
         <artifactId>spring-boot-neko</artifactId>
-        <version>0.0.1-jdk11-snapshot</version>
+        <version>${revision}</version>
     </parent>
 
     <artifactId>neko-server</artifactId>
@@ -28,6 +28,23 @@
             <optional>true</optional>
         </dependency>
     </dependencies>
+    <profiles>
+        <profile>
+            <id>local</id>
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
+            <properties>
+                <profile.active>local</profile.active>
+            </properties>
+        </profile>
+        <profile>
+            <id>test</id>
+            <properties>
+                <profile.active>test</profile.active>
+            </properties>
+        </profile>
+    </profiles>
     <build>
         <!-- 设置构建的 jar 包名 -->
         <finalName>${project.artifactId}</finalName>

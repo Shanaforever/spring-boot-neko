@@ -16,6 +16,10 @@
     <description>springboot web框架 封装</description>
 
     <dependencies>
+        <dependency>
+            <groupId>com.neko.boot</groupId>
+            <artifactId>neko-common</artifactId>
+        </dependency>
         <!-- Web 相关 -->
         <dependency>
             <groupId>org.springframework.boot</groupId>

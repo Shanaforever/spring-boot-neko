@@ -1,0 +1,14 @@
+spring:
+  config:
+    activate:
+      on-profile: local
+
+neko:
+  info:
+    version: 1.0.0
+    base-package: com.neko.boot
+
+server:
+  port: 8090
+  servlet:
+    context-path: /neko-server

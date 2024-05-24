@@ -19,6 +19,9 @@
         <revision>0.0.1-jdk11-snapshot</revision>
         <!-- 统一依赖管理 -->
         <spring.boot.version>2.7.18</spring.boot.version>
+        <!-- 工具类 -->
+        <lombok.version>1.18.30</lombok.version>
+        <hutool.version>5.8.16</hutool.version>
     </properties>
 
     <dependencyManagement>
@@ -38,7 +41,22 @@
                 <artifactId>spring-boot-configuration-processor</artifactId>
                 <version>${spring.boot.version}</version>
             </dependency>
-
+            <!-- 工具类 -->
+            <dependency>
+                <groupId>com.neko.boot</groupId>
+                <artifactId>neko-common</artifactId>
+                <version>${revision}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.projectlombok</groupId>
+                <artifactId>lombok</artifactId>
+                <version>${lombok.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>cn.hutool</groupId>
+                <artifactId>hutool-all</artifactId>
+                <version>${hutool.version}</version>
+            </dependency>
         </dependencies>
     </dependencyManagement>
 

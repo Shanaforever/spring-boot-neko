@@ -11,6 +11,7 @@
     <packaging>pom</packaging>
     <modules>
         <module>neko-spring-boot-starter-web</module>
+        <module>neko-common</module>
     </modules>
 
     <artifactId>neko-framework</artifactId>
