@@ -58,7 +58,7 @@
             </resource>
         </resources>
         <plugins>
-            <!-- 打包 -->
+            <!-- ↓↓↓↓ 打包方式1： 直接打出完整可执行jar ↓↓↓↓ -->
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
@@ -71,6 +71,44 @@
                     </execution>
                 </executions>
             </plugin>
+            <!-- ↑↑↑↑ 打包方式1： 直接打出完整可执行jar ↑↑↑↑ -->
+            <!-- ↓↓↓↓ 打包方式2：只打包出 neko-server, 依赖jar放在外部 ↓↓↓↓ -->
+            <!-- 拷贝 neko-server 输出目录 target/thin/root 下所有文件， 复制项目下的 start.bat 和 stop.bat 文件 -->
+            <!-- 修改对应参数即可 -->
+            <!-- <plugin> -->
+            <!--     <groupId>org.springframework.boot</groupId> -->
+            <!--     <artifactId>spring-boot-maven-plugin</artifactId> -->
+            <!--     <version>${spring.boot.version}</version> -->
+            <!--     <dependencies> -->
+            <!--         <dependency> -->
+            <!--             <groupId>org.springframework.boot.experimental</groupId> -->
+            <!--             <artifactId>spring-boot-thin-layout</artifactId> -->
+            <!--             <version>1.0.27.RELEASE</version> -->
+            <!--         </dependency> -->
+            <!--     </dependencies> -->
+            <!--     <executions> -->
+            <!--         <execution> -->
+            <!--             <goals> -->
+            <!--                 <goal>repackage</goal> &lt;!&ndash; 将引入的 jar 打入其中 &ndash;&gt; -->
+            <!--             </goals> -->
+            <!--         </execution> -->
+            <!--     </executions> -->
+            <!-- </plugin> -->
+            <!-- <plugin> -->
+            <!--     <groupId>org.springframework.boot.experimental</groupId> -->
+            <!--     <artifactId>spring-boot-thin-maven-plugin</artifactId> -->
+            <!--     <version>1.0.27.RELEASE</version> -->
+            <!--     <executions> -->
+            <!--         <execution> -->
+            <!--             <id>resolve</id> -->
+            <!--             <goals> -->
+            <!--                 <goal>resolve</goal> -->
+            <!--             </goals> -->
+            <!--             <inherited>false</inherited> -->
+            <!--         </execution> -->
+            <!--     </executions> -->
+            <!-- </plugin> -->
+            <!-- ↑↑↑↑ 打包方式2：只打包出 neko-server, 依赖jar放在外部 ↑↑↑↑ -->
         </plugins>
     </build>
 </project>
