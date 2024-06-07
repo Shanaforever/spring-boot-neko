@@ -27,14 +27,14 @@
             <artifactId>spring-boot-configuration-processor</artifactId>
             <optional>true</optional>
         </dependency>
-        <dependency>
-            <groupId>com.neko.boot</groupId>
-            <artifactId>neko-spring-boot-starter-monitor</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>de.codecentric</groupId>
-            <artifactId>spring-boot-admin-starter-server</artifactId>
-        </dependency>
+        <!-- <dependency> -->
+        <!--     <groupId>com.neko.boot</groupId> -->
+        <!--     <artifactId>neko-spring-boot-starter-monitor</artifactId> -->
+        <!-- </dependency> -->
+        <!-- <dependency> -->
+        <!--     <groupId>de.codecentric</groupId> -->
+        <!--     <artifactId>spring-boot-admin-starter-server</artifactId> -->
+        <!-- </dependency> -->
     </dependencies>
     <profiles>
         <profile>

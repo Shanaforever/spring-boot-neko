@@ -45,11 +45,11 @@
                 <version>${spring.boot.version}</version>
             </dependency>
             <!-- 监控 -->
-            <dependency>
-                <groupId>com.neko.boot</groupId>
-                <artifactId>neko-spring-boot-starter-monitor</artifactId>
-                <version>${revision}</version>
-            </dependency>
+            <!-- <dependency> -->
+            <!--     <groupId>com.neko.boot</groupId> -->
+            <!--     <artifactId>neko-spring-boot-starter-monitor</artifactId> -->
+            <!--     <version>${revision}</version> -->
+            <!-- </dependency> -->
            <dependency>
                 <groupId>de.codecentric</groupId>
                 <artifactId>spring-boot-admin-starter-client</artifactId> <!-- 实现 Spring Boot Admin Server 服务端 -->
