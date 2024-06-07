@@ -13,12 +13,12 @@
     <packaging>jar</packaging>
 
     <name>${project.artifactId}</name>
-    <description>服务监控</description>
+    <description>服务监控，需要再部署一个Spring Boot Admin Server 服务端</description>
 
     <dependencies>
         <dependency>
             <groupId>de.codecentric</groupId>
-            <artifactId>spring-boot-admin-starter-client</artifactId> <!-- 实现 Spring Boot Admin Server 服务端 -->
+            <artifactId>spring-boot-admin-starter-client</artifactId> <!-- 实现 Spring Boot Admin Server 客户端 -->
         </dependency>
     </dependencies>
 

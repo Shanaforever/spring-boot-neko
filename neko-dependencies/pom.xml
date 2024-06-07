@@ -50,7 +50,7 @@
                 <artifactId>neko-spring-boot-starter-monitor</artifactId>
                 <version>${revision}</version>
             </dependency>
-                       <dependency>
+           <dependency>
                 <groupId>de.codecentric</groupId>
                 <artifactId>spring-boot-admin-starter-client</artifactId> <!-- 实现 Spring Boot Admin Server 服务端 -->
                 <version>${spring-boot-admin.version}</version>

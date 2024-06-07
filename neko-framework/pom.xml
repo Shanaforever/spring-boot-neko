@@ -12,7 +12,8 @@
     <modules>
         <module>neko-spring-boot-starter-web</module>
         <module>neko-common</module>
-        <module>neko-spring-boot-starter-monitor</module>
+        <!-- 监控 -->
+        <!-- <module>neko-spring-boot-starter-monitor</module> -->
     </modules>
 
     <artifactId>neko-framework</artifactId>
