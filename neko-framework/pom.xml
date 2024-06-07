@@ -12,6 +12,7 @@
     <modules>
         <module>neko-spring-boot-starter-web</module>
         <module>neko-common</module>
+        <module>neko-spring-boot-starter-excel</module>
         <!-- 监控 -->
         <!-- <module>neko-spring-boot-starter-monitor</module> -->
     </modules>
